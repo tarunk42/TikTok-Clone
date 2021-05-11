@@ -12,7 +12,7 @@ import {
 import Home from './src/screens/Home';
 import Navigation from './src/navigation';
 
-
+import { withAuthenticator } from "aws-amplify-react-native";
 
 const App: () => Node = () => {
 
@@ -28,4 +28,4 @@ const App: () => Node = () => {
 
 
 
-export default App;
+export default withAuthenticator(App);
